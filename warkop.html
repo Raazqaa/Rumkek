@@ -58,7 +58,7 @@
   <body>
 
     <!-- navbar  -->
-    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap fixed z-50 w-full">
       <a href="index.html" class="p-2 mr-4 inline-flex items-center">
         <img src="img/warung/warkop-2-logo.png" alt="" class="w-14 rounded-full mr-2">
           <path
@@ -82,83 +82,99 @@
         <div
           class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
         >
-          <a href="index.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
-            <span>Home</span>
-          </a>
-          <a href="gallery.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
-            <span>Gallery</span>
-          </a>
-          <a href="warkop.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
-            <span>Waroeng</span>
-          </a>
+        <a
+        href="index.html"
+        class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+      >
+        <span>Home</span>
+      </a>
+      <a
+        href="warkop.html"
+        class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+      >
+        <span>Waroeng</span>
+      </a>
+      <a
+        href="gallery.html"
+        class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+      >
+        <span>Gallery</span>
+      </a>
         </div>
       </div>
     </nav>
     <!-- navbar close  -->
 
-    <!-- content  -->
-    <div class="content-1 flex box-border">
-        <div class="container w-[70%] bg-slate-400 flex">
-            <div class="w-full m-5 bg-white h-[610px] rounded-xl flex flex-col">
-                <img src="img/warung/ig-warkop.png" alt="" class="rounded-3xl w-[50%] translate-x-[30px] -translate-y-[-25px]">    
-                <div class="deskripsi bg-slate-200 z-10 w-[50%] m-auto p-5  translate-x-[-140px] -translate-y-[-70px] text-sm rounded-xl">
-                    <h1>"Waro'eng Kakek"</h1>
-                    <p>Memiliki beberapa Umkm Seperti Waroeng kopi yang terletak di <strong> 𝙟𝙖𝙡𝙖𝙣 𝙗𝙪𝙣𝙜𝙪𝙧 9 𝙧𝙩 012/006 𝙣𝙤.16, Ciracas Jakarta Timur </strong></p>
+    <!-- slider -->
+    <div class="bg-slate-100 w-full h-auto mx-auto translate-x-0 translate-y-0 p-5 text-sm box-border pt-[29%] sm:pt-[16%] lg:float-start lg:w-[70%] lg:h-[660px] lg:pt-[10%] lg:mx-[3%] lg:flex xl:pt-[7%] xl:h-[750px] xl:bg-white xl:w-[75%] xl:p xl:mx-0">
+      <div class="display xl:bg-gray-300 xl:rounded-2xl xl:w-full xl:h-[620px]">
+          <div class="h-[230px] sm:h-[10%] w-full overflow-hidden flex flex-nowrap text-center box-border m-auto lg:h-full sm:w-[80%] xl:w-[50%] xl:float-start xl:ml-5" id="slider">
+              <div class="bg-slate-100 flex-none w-full flex flex-col m-auto items-center justify-center xl:rounded-2xl">
+                  <img src="img/warung/menu-1.png" alt="menu-1" class="w-full sm:p-5 h-auto hover:brightness-50 rounded-lg">
+              </div>
+              <div class="bg-slate-100 flex-none w-full flex flex-col m-auto items-center justify-center xl:rounded-2xl">
+                  <img src="img/warung/menu-2.png" alt="menu-2" class="w-full sm:p-5 h-auto hover:brightness-50 rounded-lg">
+              </div>
+              <div class="bg-slate-100 flex-none w-full flex flex-col m-auto items-center justify-center xl:rounded-2xl">
+                  <img src="img/warung/baju.jpg" alt="baju" class="w-full sm:p-5 h-auto hover:brightness-50 rounded-lg ">
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <!-- slider close -->
+
+      <!-- content -->
+      <div class="flex p-5 float-start">
+        <div class="container w-full bg-slate-200 flex flex-col lg:flex-row rounded-2xl lg:w-[75%] xl:w-[78%] xl:bg-gray-200 xl:h-[620px]">
+          
+            <div class="w-full p-5 h-auto rounded-xl flex flex-col xl:w-[80%] mx-auto">
+                <img src="img/warung/ig-warkop.png" alt="" class="rounded-3xl w-full object-cover xl:w-[70%] m-auto xl:translate-x-[-260px] xl:translate-y-[50px]">
+                    
+                <div class="deskripsi bg-slate-100 w-[100%] mx-auto p-5 text-sm sm:text-lg rounded-xl my-5 lg:text-xl xl:w-[50%] xl:m-auto xl:text-lg xl:translate-y-[-128px] xl:translate-x-[-100px] z-10">
+                    <h1 class="text-lg font-semibold lg:text-3xl   xl:text-lg">"Waro'eng Kakek"</h1>
+                    <p>Waroeng kopi yang terletak di <strong> 𝙟𝙖𝙡𝙖𝙣 𝙗𝙪𝙣𝙜𝙪𝙧 9 𝙧𝙩 012/006 𝙣𝙤.16, Ciracas Jakarta Timur </strong></p>
                     <br>
-                    <p>Menyediakan Tempat Bersantai untuk <strong> "Melepas penat dari hiruk pikuk keduniaan yang fana."</strong> Serta di lengkapi aneka Makanan dan Minuman dengan harga yang Terjangkau. <strong> Dijamin Gacorr</strong></p>
+                    <p>Tempat bersantai untuk <strong>"Melepas penat dari hiruk pikuk Dunia yang fana."</strong> Serta dilengkapi aneka makanan dan minuman dengan harga yang terjangkau. <strong>Dijamin Gacorr</strong></p>
                 </div>
-                <!-- slider  -->
-                <div class="usaha bg-slate-200 z-10 w-[40%] h-[] m-auto translate-x-[270px] translate-y-[-415px] p-5 text-sm box-border rounded-xl">
-                    <div class="display">
-                        <div class="h-[230px] w-[95%] overflow-hidden flex flex-nowrap text-center bg-slate-200 box-border m-auto" id="slider">
-                        <div class="bg-slate-100 text-white flex-none w-full flex flex-col m-auto items-center justify-center">
-                            <img src="img/warung/menu-1.png" alt="logo-1" class="w-[100%]  shadow-2xl hover:brightness-50 rounded-lg">
-                        </div>
-                        <div class="bg-slate-100 text-white flex-none w-full flex flex-col m-auto items-center justify-center">
-                            <img src="img/warung/menu-2.png" alt="logo-1" class="w-[100%]  shadow-2xl hover:brightness-50 rounded-lg">
-                        </div>
-                        <div class="bg-slate-100 text-white flex-none w-full flex flex-col m-auto items-center justify-center">
-                            <img src="img/warung/baju.jpg" alt="logo-1" class="w-[70%]  shadow-2xl hover:brightness-50 rounded-lg">
-                        </div>
-                        </div>
-                    </div>
-                <!-- slider close  -->
-                <div class="logo-warkop">
-                    <a href="https://www.instagram.com/warkop.rumkek/" target="_blank">
-                    <img src="img/warung/warkop-2-logo.png" alt="" class="absolute rounded-3xl w-[19%] translate-x-[100px] translate-y-[115px] hover:brightness-50">
-                    <h1 class="translate-x-[185px] translate-y-[140px]"><a href="https://www.instagram.com/warkop.rumkek/" target="_blank" class="absolute p-2 rounded-lg bg-red-700 text-cyan-50 hover:bg-red-900">@Warkop.Rumkek</a></h1>
+
+                <div class="maps absolute p-3 bg-white rounded-2xl xl:w-[25%] xl:translate-x-[605px] xl:translate-y-[10px] hover:brightness-50 hidden lg:block lg:w-[15%] lg:translate-x-[540px] lg:translate-y-[710px]"><a href="https://www.google.com/maps/place/Gg.+Bungur+IX,+RW.6,+Rambutan,+Kec.+Ciracas,+Kota+Jakarta+Timur,+Daerah+Khusus+Ibukota+Jakarta+13830/@-6.3171389,106.8852565,16z/data=!4m6!3m5!1s0x2e69ed6b30cebb4d:0x2ca609da13d4d587!8m2!3d-6.3171389!4d106.8852565!16s%2Fg%2F1q6jjlmfp?entry=ttu&g_ep=EgoyMDI0MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <img src="img/warung/maps.png" alt="" class="xl:rounded-2xl">
+                </a>
+                </div>
+                
+                <div class="logo-warkop w-full flex justify-center lg:pt-5 xl:translate-x-[470px] xl:translate-y-[-190px]">
+                    <a href="https://www.instagram.com/warkop.rumkek/" target="_blank" class="flex flex-col items-center">
+                        <img src="img/warung/warkop-2-logo.png" alt="" class="rounded-3xl w-[30%] hover:brightness-50 mb-2 lg:w-[50%]">
+                        <h1 class="p-2 rounded-lg bg-red-700 text-cyan-50 hover:bg-red-900">@Warkop.Rumkek</h1>
                     </a>    
                 </div>
-                </div>
             </div>
         </div>
-     <!-- content Close -->
+    </div>
+    <!-- content Close -->
          
-         <!-- sidebar  -->
-         <div class="container iklan w-[25%] h-[650px] bg-slate-100 absolute end-0 z-10 overflow-auto mr-10 ">
-             <div class="box iklan grid grid-cols-1 mx-3">
-                 <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
-                     <img src="img/warung/menu-1.png" alt="menu1" class="gambar my-5 rounded-xl">
-                    </div>
-                    <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
-                        <img src="img/warung/menu-2.png" alt="menu2" class="gambar my-5 rounded-xl ">
-                    </div>
-                    <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
-                        <img src="img/warung/baju.jpg" alt="baju" class="gambar my-5 rounded-xl ">
-                    </div>
-                    <div class="grid-item my-5 w-[100%] h-[300px] text-center bg-black text-white flex rounded-2xl hover:brightness-50 transition ease-in-out overflow-hidden">
-                        <p class="m-auto"> -- Pemasangan Iklan Gratis -- </p>
-                    </div>
-                    <div class="grid-item my-5 w-[100%] h-[300px] text-center bg-black text-white flex rounded-2xl hover:brightness-50 transition ease-in-out overflow-hidden">
-                        <p class="m-auto"> -- Pemasangan Iklan Gratis -- </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!-- sidebar Close -->
+         <!-- sidebar -->
+    <div class="container iklan w-full max-w-xs h-[650px] bg-gray-200 right-0 overflow-auto mr-2 md:w-1/4 xl:w-1/4 hidden lg:block lg:w-[25%] lg:m-auto lg:fixed lg:mt-[9%] lg:border-l-8 lg:h-lvh xl:mt-[6%] xl:h-lvh">
+      <div class="box iklan grid grid-cols-1 mx-3 xl:mx-auto xl:w-[85%] ">
+          <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
+              <img src="img/warung/menu-1.png" alt="menu1" class="gambar my-5 rounded-xl w-full h-auto xl:bg-white xl:p-2">
+          </div>
+          <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
+              <img src="img/warung/menu-2.png" alt="menu2" class="gambar my-5 rounded-xl w-full h-auto xl:bg-white xl:p-2">
+          </div>
+          <div class="grid-item rounded-2xl hover:brightness-50 transition ease-in-out">
+              <img src="img/warung/baju.jpg" alt="baju" class="gambar my-5 rounded-xl w-full h-auto xl:bg-white xl:p-2">
+          </div>
+          <div class="grid-item my-5 w-full h-[300px] text-center bg-black text-white flex rounded-2xl hover:brightness-50 transition ease-in-out  lg:h-[200px] xl:h-[250px]">
+              <p class="m-auto"> -- Pemasangan Iklan Gratis -- </p>
+          </div>
+          <div class="grid-item my-5 w-full h-[300px] text-center bg-black text-white flex rounded-2xl hover:brightness-50 transition ease-in-out  lg:h-[200px] xl:h-[250px]">
+              <p class="m-auto"> -- Pemasangan Iklan Gratis -- </p>
+          </div>
+      </div>
+  </div>
+  <!-- sidebar Close -->
    
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"

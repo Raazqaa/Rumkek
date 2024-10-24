@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,21 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <style>
       body {
         font-family: "Rubik", sans-serif;
       }
-      body {
-        font-family: "Rubik", sans-serif;
-      }
-      
-      @media (min-width: 1024px) {
-        .top-navbar {
-          display: inline-flex !important;
+
+      /* Ensure content is full width on mobile */
+      @media (max-width: 1024px) {
+        .content-1 {
+          flex-direction: column;
+        }
+        .content-1 > div {
+          width: 100%;
+        }
+        #slider {
+          height: auto;
         }
       }
 
+      /* For large screens, make sure navbar is flexed horizontally */
       @media (min-width: 1024px) {
         .top-navbar {
           display: inline-flex !important;
@@ -38,15 +42,10 @@
   </head>
   <title>Rumah Kakek</title>
   <body>
-
-    <!-- navbar  -->
+    <!-- Navbar -->
     <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
       <a href="index.html" class="p-2 mr-4 inline-flex items-center">
-        <img src="img/logo/logo-2.jpg" alt="" class="w-14 rounded-full mr-2">
-          <path
-            d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
-          />
-        </svg>
+        <img src="img/logo/logo-2.jpg" alt="" class="w-14 rounded-full mr-2" />
         <span class="text-xl text-white font-bold uppercase tracking-wide hover:opacity-50"
           >Rumkek</span
         >
@@ -64,99 +63,132 @@
         <div
           class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
         >
-          <a href="index.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <a
+            href="index.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
             <span>Home</span>
           </a>
-          <a href="gallery.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
-            <span>Gallery</span>
-          </a>
-          <a href="warkop.html"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+          <a
+            href="warkop.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
             <span>Waroeng</span>
+          </a>
+          <a
+            href="gallery.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Gallery</span>
           </a>
         </div>
       </div>
     </nav>
-    <!-- navbar close  -->
+    <!-- Navbar close -->
 
-   
-    <div class="content-1 flex">
-        <!-- Perkenalan  -->
-        <div class="h-[647px] w-[55%] overflow-hidden flex flex-nowrap text-center bg-slate-100">
-            <div class="bg-slate-200 w-[90%] h-[90%] m-auto rounded-xl shadow-lg flex">
-              <div class="m-auto justify-center items-center p-10">
-                <h2 class="text-5xl font-semibold">"Rumah Kakek"</h2>
-                <h3 class="text-xl mt-5">Merupakan  <strong>Rumah persinggahan</strong> bagi sebagian anak remaja yang sedang mencari <strong>"JATI DIRI"</strong> mereka. . .</h3>
-              </div>
-            </div>
+    <div class="content-1 flex flex-wrap">
+      <!-- Perkenalan -->
+      <div
+        class="h-auto w-full lg:w-[55%] flex flex-nowrap text-center bg-slate-100 p-4"
+      >
+        <div class="bg-slate-200 w-full h-auto lg:h-[90%] m-auto rounded-xl shadow-lg flex">
+          <div class="m-auto justify-center items-center p-6">
+            <h2 class="text-4xl lg:text-5xl font-semibold">"Rumah Kakek"</h2>
+            <h3 class="text-lg lg:text-xl mt-5">
+              Merupakan <strong>Rumah persinggahan</strong> bagi sebagian anak
+              remaja yang sedang mencari <strong>"JATI DIRI"</strong> mereka. . .
+            </h3>
+          </div>
         </div>
-        <!-- Perkenalan close  -->
+      </div>
+      <!-- Perkenalan close -->
 
-         <!-- slider  -->
-        <div class="h-[647px] w-[45%] overflow-hidden flex flex-nowrap text-center bg-slate-200 shadow-2xl" id="slider">
-            <div class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-                <img src="img/logo/logo-1.png" alt="logo-1" class="w-[70%] h-[400px] shadow-2xl hover:brightness-50  rounded-lg">
-            </div>
-            <div class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-                <img src="img/logo/logo-2.jpg" alt="logo-1" class="w-[70%] h-[400px] shadow-2xl hover:brightness-50  rounded-lg">
-            </div>
-            <div class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-                <img src="img/logo/logo-3.jpg" alt="logo-1" class="w-[70%] h-[400px] shadow-2xl hover:brightness-50  rounded-lg">
-            </div>
-            <div class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-                <img src="img/logo/logo-4.jpg" alt="logo-1" class="w-[70%] h-[400px] shadow-2xl hover:brightness-50  rounded-lg">
-            </div>
+      <!-- Slider -->
+      <div
+        class="h-auto lg:h-[647px] w-full lg:w-[45%] overflow-hidden flex flex-nowrap text-center bg-slate-200 shadow-2xl"
+        id="slider"
+      >
+        <div
+          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center"
+        >
+          <img
+            src="img/logo/logo-1.png"
+            alt="logo-1"
+            class="w-[70%] h-auto lg:h-[400px] shadow-2xl hover:brightness-50 rounded-lg"
+          />
         </div>
+        <div
+          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center"
+        >
+          <img
+            src="img/logo/logo-2.jpg"
+            alt="logo-2"
+            class="w-[70%] h-auto lg:h-[400px] shadow-2xl hover:brightness-50 rounded-lg"
+          />
+        </div>
+        <div
+          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center"
+        >
+          <img
+            src="img/logo/logo-3.jpg"
+            alt="logo-3"
+            class="w-[70%] h-auto lg:h-[400px] shadow-2xl hover:brightness-50 rounded-lg"
+          />
+        </div>
+        <div
+          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center"
+        >
+          <img
+            src="img/logo/logo-4.jpg"
+            alt="logo-4"
+            class="w-[70%] h-auto lg:h-[400px] shadow-2xl hover:brightness-50 rounded-lg"
+          />
+        </div>
+      </div>
     </div>
-        <!-- slider close  -->
-            
-            
+    <!-- Slider close -->
 
-        <!-- skrip slider  -->
-        <script>
-          document.addEventListener('DOMContentLoaded', () => {
-              const slider = document.querySelector('#slider');
-              const sliderContent = slider.innerHTML;  // Store the current content
-              slider.innerHTML += sliderContent;       // Duplicate the content for seamless loop
-          
-              setTimeout(function moveSlide() {
-                  const max = slider.scrollWidth / 2;   // Adjust max to half of the new scroll width (since content is duplicated)
-                  const left = slider.clientWidth;
-          
-                  if (slider.scrollLeft >= max) {
-                      slider.scrollLeft = 0;  // Reset to the beginning without smooth behavior for a seamless effect
-                  }
-          
-                  slider.scrollBy({left, behavior: 'smooth'});
-          
-                  setTimeout(moveSlide, 2000);
-              }, 2000);
-          });
-          </script>
-            <!-- skrip slider close -->
+    <!-- Slider script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slider = document.querySelector("#slider");
+        const sliderContent = slider.innerHTML; // Store the current content
+        slider.innerHTML += sliderContent; // Duplicate the content for seamless loop
+
+        setTimeout(function moveSlide() {
+          const max = slider.scrollWidth / 2; // Adjust max to half of the new scroll width (since content is duplicated)
+          const left = slider.clientWidth;
+
+          if (slider.scrollLeft >= max) {
+            slider.scrollLeft = 0; // Reset to the beginning without smooth behavior for a seamless effect
+          }
+
+          slider.scrollBy({ left, behavior: "smooth" });
+
+          setTimeout(moveSlide, 2000);
+        }, 2000);
+      });
+    </script>
+    <!-- Slider script close -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
-    >
-   </script>
+    ></script>
 
-    <!-- skrip untuk navbar  -->
+    <!-- Navbar toggle script -->
     <script>
-        $(document).ready(function () {
-          $(".nav-toggler").each(function (_, navToggler) {
-            var target = $(navToggler).data("target");
-            $(navToggler).on("click", function () {
-              $(target).animate({
-                height: "toggle",
-              });
+      $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+            $(target).animate({
+              height: "toggle",
             });
           });
         });
-      </script>
-       <!-- skrip untuk navbar close -->
+      });
+    </script>
   </body>
 </html>
