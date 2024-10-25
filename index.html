@@ -38,6 +38,7 @@
   </head>
   <title>Rumah Kakek</title>
   <body>
+    
     <!-- Navbar -->
     <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
       <a href="index.html" class="p-2 mr-4 inline-flex items-center">
@@ -105,7 +106,7 @@
         id="slider"
       >
         <div
-          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center"
+          class="bg-slate-100 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center sm:"
         >
           <img
             src="img/logo/logo-1.png"
@@ -142,21 +143,28 @@
         </div>
       </div>
     </div>
+
+    <footer class="flex flex-col lg:hidden">
+      <div class="bg-slate-800 fixed w-full bottom-0 h-[75px] flex">
+        <p class=" text-white m-auto">May ALLAH allowed All of Us to entering Jannah</p>
+      </div>
+    </footer>
     <!-- Slider close -->
 
     <!-- Slider script -->
     <script>
+
       document.addEventListener("DOMContentLoaded", () => {
         const slider = document.querySelector("#slider");
-        const sliderContent = slider.innerHTML; // Store the current content
-        slider.innerHTML += sliderContent; // Duplicate the content for seamless loop
+        const sliderContent = slider.innerHTML; 
+        slider.innerHTML += sliderContent; 
 
         setTimeout(function moveSlide() {
-          const max = slider.scrollWidth / 2; // Adjust max to half of the new scroll width (since content is duplicated)
+          const max = slider.scrollWidth / 2; 
           const left = slider.clientWidth;
 
           if (slider.scrollLeft >= max) {
-            slider.scrollLeft = 0; // Reset to the beginning without smooth behavior for a seamless effect
+            slider.scrollLeft = 0; 
           }
 
           slider.scrollBy({ left, behavior: "smooth" });
